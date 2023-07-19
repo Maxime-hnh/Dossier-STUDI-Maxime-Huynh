@@ -14,7 +14,6 @@ import useWindowWidth from '../../Hooks/useWindowWidth';
 export default function Profile() {
 
 
-
     const width = useWindowWidth();
     const navigate = useNavigate()
     const token = localStorage.getItem('token');

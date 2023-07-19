@@ -119,7 +119,8 @@ export default function CarsForm() {
                                 .required('Sélectionnez la catégorie'),
                             price: Yup.number()
                                 .required(),
-                            description: Yup.string(),
+                            description: Yup.string().max(1000, '1000 caractères maximum')
+                            ,
                             milage: Yup.number()
                                 .required(),
                             options: Yup.string(),

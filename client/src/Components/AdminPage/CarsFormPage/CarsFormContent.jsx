@@ -43,16 +43,18 @@ export default function CarsFormContent({ updateForm, setFieldValue, token }) {
     return (
         <>
             <fieldset disabled={!updateForm} style={{ marginTop: '20px' }}>
+                <div className='pb-2'>
+                    <h2 className='has-text-left title is-5 mb-2'>Nom de l'annonce :</h2>
+                    <MyTextInput
+                        label=""
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Ex : Citroën C4 110ch année 2016"
+                    />
+                </div>
 
-                <MyTextInput
-                    label="Nom de l'annonce"
-                    id="name"
-                    name="name"
-                    type="text"
-                    placeholder="Ex : Citroën C4 110ch année 2016"
-                />
-
-                <div className={width > 1023 ? 'CarsFormContent-selContainer-bigger' : 'CarsFormContent-selContainer-smaller'}>
+                <div className={` is-flex is-justify-content-space-between mt-2 mb-2 ${width > 1023 ? ' is-flex-direction-row ' : 'is-flex-direction-column'}`}>
                     <MySelect label="Catégorie" id="features.bodyCar" name="features.bodyCar">
                         <option value="">Catégorie</option>
                         <option value="Citadine">Citadine</option>
@@ -92,66 +94,96 @@ export default function CarsFormContent({ updateForm, setFieldValue, token }) {
                     </MySelect>
                 </div>
 
-                <MyTextInput
-                    label="Date de mise en circulation"
-                    id="date"
-                    name="date"
-                    type="date"
-                />
-
-                <MyTextInput
-                    label="Description"
-                    id="description"
-                    name="description"
-                    type="textarea"
-                    placeholder=""
-                />
-
-                <div className={width > 1023 ? 'CarsFormContent-input-container-bigger' : 'CarsFormContent-input-container-smaller'}>
+                <div className='pb-2'>
+                    <h2 className='has-text-left title is-5 mb-2'>Date de mise en circulation :</h2>
                     <MyTextInput
-                        label="Prix"
-                        id="price"
-                        name="price"
-                        type="number"
-                    />
-                    <MyTextInput
-                        label="Kilométrage"
-                        id="milage"
-                        name="milage"
-                        type="number"
-                    />
-                    <MyTextInput
-                        label="Cylindre"
-                        id="features.engine"
-                        name="features.engine"
-                        type="number"
-
-                    />
-                    <MyTextInput
-                        label="Puissance fiscale"
-                        id="features.fiscalHorsePower"
-                        name="features.fiscalHorsePower"
-                        type="number"
+                        label="Date de mise en circulation"
+                        id="date"
+                        name="date"
+                        type="date"
                     />
                 </div>
 
-                <MyTextInput
-                    label="Options"
-                    id="options"
-                    name="options"
-                    type="textarea"
-                    placeholder=""
-                />
-                {updateForm ?
+                <div className='pb-2'>
+                    <h2 className='has-text-left title is-5 mb-2'>Description : </h2>
                     <MyTextInput
-                        label="Image"
-                        id="file"
-                        name="file"
-                        type="file"
-                        multiple="multiple"
-                        onChange={handleFileChange}
-                        value={undefined}
-                    /> : ''}
+                        label="Description"
+                        id="description"
+                        name="description"
+                        type="textarea"
+                        placeholder=""
+                    />
+
+                </div>
+
+                <div className={` is-flex is-justify-content-center${width > 1023 ? ' is-flex-direction-row ' : 'is-flex-direction-column'}`}>
+                    <div className='p-2'>
+                        <div className='mb-3'>
+                            <h2 className='has-text-centered title is-5 mb-2'>Prix :</h2>
+                            <MyTextInput
+                                label="Prix"
+                                id="price"
+                                name="price"
+                                type="number"
+                            />
+                        </div>
+                        <div className='mb-3'>
+                            <h2 className='has-text-centered title is-5 mb-2'>Kilométrage :</h2>
+                            <MyTextInput
+                                label="Kilométrage"
+                                id="milage"
+                                name="milage"
+                                type="number"
+                            />
+                        </div>
+                    </div>
+                    <div className='p-2'>
+                        <div className='mb-3'>
+                            <h2 className='has-text-centered title is-5 mb-2'>Puissance fiscale :</h2>
+                            <MyTextInput
+                                label="Cylindre"
+                                id="features.engine"
+                                name="features.engine"
+                                type="number"
+
+                            />
+                        </div>
+                        <div className='mb-3'>
+                            <h2 className='has-text-centered title is-5 mb-2'>Puissance DIN :</h2>
+                            <MyTextInput
+                                label="Puissance fiscale"
+                                id="features.fiscalHorsePower"
+                                name="features.fiscalHorsePower"
+                                type="number"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className='pb-2'>
+                    <h2 className='has-text-left title is-5 mb-2'>Options :</h2>
+                    <MyTextInput
+                        label="Options"
+                        id="options"
+                        name="options"
+                        type="textarea"
+                        placeholder=""
+                    />
+                </div>
+                {updateForm ?
+                    <div className='pb-2 is-flex is-justify-content-center'>
+                        <MyTextInput
+                            label="Image"
+                            id="file"
+                            name="file"
+                            type="file"
+                            multiple="multiple"
+                            onChange={handleFileChange}
+                            value={undefined}
+                        />
+                    </div>
+                    : ''}
+
             </fieldset>
         </>
     )
