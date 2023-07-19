@@ -8,12 +8,10 @@ import { NavLink } from 'react-router-dom';
 import { AiFillCar } from 'react-icons/ai';
 import { AiFillHome } from 'react-icons/ai';
 import { BsFillInfoCircleFill } from 'react-icons/bs';
-import useWindowWidth from '../../../Hooks/useWindowWidth';
 
 
 export default function NavBar() {
 
-    const width = useWindowWidth()
 
     const [open, setOpen] = useState(false);
     const openModal = () => {

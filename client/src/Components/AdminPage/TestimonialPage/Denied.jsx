@@ -11,7 +11,7 @@ export default function Denied({ handleUnapprovedStatus, handleApprovedStatus, s
 
         const getTestimonials = async () => {
             try {
-                const response = await fetch('http://localhost:8000/testimonials/unapproved', {
+                const response = await fetch('http://51.210.124.204:8000/testimonials/unapproved', {
                     method: 'GET',
                     headers: {
                         'Content-type': 'application/json',

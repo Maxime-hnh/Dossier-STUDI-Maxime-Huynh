@@ -1,6 +1,4 @@
 import React from 'react'
-import {BsBack, BsTools} from 'react-icons/bs'
-import { IoMdFlash } from 'react-icons/io'
 import { TiFlashOutline } from 'react-icons/ti'
 import './HomeCardItem.css'
 

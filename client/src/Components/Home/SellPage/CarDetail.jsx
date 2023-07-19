@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import moment from 'moment'
 import { Modal, Content } from 'react-bulma-components';
 import { BsCarFrontFill } from 'react-icons/bs'
-import { FiFlag } from 'react-icons/fi'
-import { truncateText } from '../../../Hooks/TruncateText'
 import { ImPriceTag } from 'react-icons/im'
 import { BsSpeedometer2 } from 'react-icons/bs'
 import { MdOutlineAirlineSeatReclineNormal } from 'react-icons/md'
@@ -18,8 +16,6 @@ import { TbBrandBumble } from 'react-icons/tb'
 export default function CarDetail({ car, openModalContact }) {
 
     return (
-
-
 
         <Modal.Card>
             <Modal.Card.Header showClose style={{ background: '#1b1b1b' }}>

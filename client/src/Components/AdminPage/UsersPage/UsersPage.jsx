@@ -22,7 +22,7 @@ export default function UsersPage() {
     useEffect(() => {
         const getUsers = async () => {
             try {
-                const response = await fetch('http://localhost:8000/user', {
+                const response = await fetch('http://51.210.124.204:8000/user', {
                     method: 'GET',
                     headers: {
                         'x-access-token': token,
@@ -44,7 +44,7 @@ export default function UsersPage() {
 
     const deleteUser = async (userId) => {
         try {
-            const response = await fetch(`http://localhost:8000/user/${userId}`, {
+            const response = await fetch(`http://51.210.124.204:8000/user/${userId}`, {
                 method: 'DELETE',
                 headers: {
                     'x-access-token': token
@@ -102,7 +102,7 @@ export default function UsersPage() {
                                         <td className='is-hidden-mobile'>{user.email}</td>
                                         <td>
                                             {user.role === 'admin' ? '' :
-                                                <a href="#"
+                                                <a href="#delete"
                                                     className='pl-2'
                                                     onClick={(() => { deleteUser(user.id) })}
                                                 >

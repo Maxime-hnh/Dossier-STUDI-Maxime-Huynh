@@ -73,20 +73,20 @@ export default function CarItem({ car, index, width }) {
                     </div>
                     <footer className="card-footer">
                         <a
-                            href="#"
+                            href="#contact"
                             onClick={openModalContact}
                             className="card-footer-item"
                         >
                             <FiMail color='#48c78e' size={25} />
                         </a>
                         <a
-                            href="#"
+                            href="#call"
                             className="card-footer-item"
                         >
                             <BsFillTelephoneFill color='#485FC7' size={25} />
                         </a>
                         <a
-                            href="#"
+                            href="#mail"
                             className="card-footer-item"
                         >
                             <MdOutlineOpenInNew color='#48c78e' size={25} />

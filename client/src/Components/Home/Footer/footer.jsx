@@ -16,7 +16,7 @@ export default function Footer({ openModalContact, width }) {
     useEffect(() => {
         const getOpeningHours = async () => {
             try {
-                const response = await fetch('http://localhost:8000/openingHours', {
+                const response = await fetch('http://51.210.124.204:8000/openingHours', {
                     method: 'GET'
                 });
                 if (response.ok) {

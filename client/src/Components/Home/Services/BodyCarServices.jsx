@@ -9,7 +9,7 @@ export default function FixCarServices({ width }) {
     useEffect(() => {
         const getContent = async () => {
             try {
-                const response = await fetch('http://localhost:8000/contents/2', {
+                const response = await fetch('http://51.210.124.204:8000/contents/2', {
                     method: 'GET'
                 });
                 if (response.ok) {

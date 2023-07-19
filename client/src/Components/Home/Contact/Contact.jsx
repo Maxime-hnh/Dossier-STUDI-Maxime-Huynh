@@ -2,7 +2,6 @@ import React from 'react'
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 import { Modal, Content } from 'react-bulma-components';
-import { useLocation } from 'react-router-dom';
 
 export default function Contact({car}) {
 
@@ -73,7 +72,7 @@ export default function Contact({car}) {
         })}
         onSubmit={async (values) => {
           try {
-            const response = await fetch('http://localhost:8000/contacts', {
+            const response = await fetch('http://51.210.124.204:8000/contacts', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

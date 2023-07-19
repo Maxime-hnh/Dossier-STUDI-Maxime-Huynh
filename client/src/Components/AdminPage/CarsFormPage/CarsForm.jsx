@@ -12,7 +12,6 @@ import useWindowWidth from '../../../Hooks/useWindowWidth';
 // VALIDATION DATE
 const dateSchema = Yup.date()
     .test('valid-date', 'error date', function (value) {
-        const { createError } = this;
         const date = moment(value, 'DD/MM/YYYY')
         if (!date.isValid() || date.year() < 1900 || date.year() > 2100) {
             return this.createError({ message: 'La date est erronée' });
@@ -128,7 +127,7 @@ export default function CarsForm() {
                             date: dateSchema
                         })}
                         onSubmit={values => {
-                            fetch(`http://localhost:8000/cars${car && car.id ? `/${car.id}` : ''}`, {
+                            fetch(`http://51.210.124.204:8000/cars${car && car.id ? `/${car.id}` : ''}`, {
                                 method: car && car.id ? 'PUT' : 'POST',
                                 headers: {
                                     'Content-type': 'application/json',

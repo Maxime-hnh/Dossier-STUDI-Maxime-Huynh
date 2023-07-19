@@ -21,7 +21,7 @@ export default function CarsPage() {
     useEffect(() => {
         const getAllCars = async () => {
             try {
-                const response = await fetch('http://localhost:8000/cars/all', {
+                const response = await fetch('http://51.210.124.204:8000/cars/all', {
                     method: 'GET'
                 })
                 if (response.ok) {
@@ -41,7 +41,7 @@ export default function CarsPage() {
 
     const deleteCar = async (carId) => {
         try {
-            const response = await fetch(`http://localhost:8000/cars/${carId}`, {
+            const response = await fetch(`http://51.210.124.204:8000/cars/${carId}`, {
                 method: 'DELETE',
                 headers: {
                     'x-access-token': token
@@ -118,7 +118,7 @@ export default function CarsPage() {
                                                 <BsPencilSquare color='#485FC7' size={25} />
                                             </button>
                                             <a
-                                                href="#"
+                                                href="#delete"
                                                 onClick={(() => { deleteCar(car.id) })}
                                                 className="card-footer-item"
                                             >

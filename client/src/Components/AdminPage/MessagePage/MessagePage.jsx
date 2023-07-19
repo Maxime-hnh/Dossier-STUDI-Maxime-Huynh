@@ -15,7 +15,7 @@ export default function ContactPage() {
 
         const getMessages = async () => {
           try {
-            const response = await fetch('http://localhost:8000/contacts', {
+            const response = await fetch('http://51.210.124.204:8000/contacts', {
               method: 'GET',
               headers: {
                 'Content-type': 'application/json',
@@ -38,7 +38,7 @@ export default function ContactPage() {
 
       const deleteContact = async (contactId) => {
         try {
-            const response = await fetch(`http://localhost:8000/contacts/${contactId}`, {
+            const response = await fetch(`http://51.210.124.204:8000/contacts/${contactId}`, {
                 method: 'DELETE',
                 headers: {
                     'x-access-token': token
