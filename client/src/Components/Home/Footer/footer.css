@@ -1,0 +1,17 @@
+/*START FOOTER*/
+
+.footer {
+    background: #1b1b1b !important;
+    color: white;
+}
+
+h4 {
+    color: #eee938 !important;
+    font-family: Rajdhani;
+}
+
+.footer-mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

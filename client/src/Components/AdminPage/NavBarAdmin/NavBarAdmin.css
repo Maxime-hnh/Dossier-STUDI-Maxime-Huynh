@@ -1,0 +1,48 @@
+/* START NAVBAR VERTICAL*/
+.custom-navbar-vertical {
+    height: 100vh;
+    width: 175px;
+    position: fixed !important;
+}
+
+.logo-bigger {
+    margin-top: 20px;
+    width: 50%;
+    margin-bottom: 5em;
+}
+
+.sidebar-white {
+    width: 100%;
+    display: flex;
+}
+
+.sidebar-white p,
+.sidebar-white svg {
+    color: white;
+}
+
+.sidebar-white:hover {
+    background: #00D1B2 !important;
+}
+
+/* END NAVBAR VERTICAL*/
+
+
+/* START NAVBAR HORIZONTAL*/
+.logo-smaller {
+    width: 3em;
+    margin: 4px;
+}
+
+.sidebar-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-black p,
+.sidebar-black svg {
+    color: #222;
+}
+
+/* END NAVBAR HORIZONTAL*/

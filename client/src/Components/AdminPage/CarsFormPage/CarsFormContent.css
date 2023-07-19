@@ -1,0 +1,27 @@
+.CarsFormContent-selContainer-bigger {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    text-align: start;
+}
+
+.CarsFormContent-input-container-bigger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.CarsFormContent-input-container-bigger .field {
+    padding: 5px;
+}
+
+
+.CarsFormContent-input-container-smaller{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

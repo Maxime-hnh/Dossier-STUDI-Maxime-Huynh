@@ -1,0 +1,91 @@
+.homePage {
+    padding: 0px !important;
+    background: url('../../Assets/test5.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    line-height: 1.2;
+    font-family: 'Lato';
+}
+
+.home span {
+    color: #eee938;
+}
+.homePage-mobile {
+height: calc(100vh - 2.5rem);
+}
+.homePage-desktop {
+    height: calc(100vh - 4.50rem);
+}
+
+.homePage-container {
+    position: relative;
+}
+
+.homePage-title {
+    color: white !important;
+}
+
+/*.homePage-btn-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}*/
+
+
+/*START REPAIR */
+.homePage-imgServices {
+    border-radius : 8px;
+}
+
+/*END REPAIR*/
+
+.homePage-btn {
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.homePage-btn1 {
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+}
+.homePage-btn2 {
+    border: 2px solid #eee938;
+    color: #eee938;
+}
+
+.homePage-btn1:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.homePage-btn2:hover {
+    transition: all 0.3s ease-in-out;
+    background: #eee938;
+    color: #333;
+}
+
+/*START FOOTER*/
+
+.footer {
+    background: #1b1b1b !important;
+    color: white;
+}
+
+h4 {
+    color: #eee938 !important;
+    font-family: Rajdhani;
+}
+
+.footer-mobile {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,155 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F7F7F7;
+    overflow: auto;
+}
+
+.title-profile {
+    padding: 20px 0;
+    font-weight: 600;
+    color: #485FC7;
+    border-bottom: 1px solid grey;
+    font-size: 2rem;
+}
+
+.AdminPage-title {
+    padding: 20px 0;
+    font-weight: 600;
+    color: #485FC7;
+    font-size: 2rem;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+    background: white;
+    font-family: Rajdhani;
+}
+
+.AdminPage-title span {
+    color: #00D1B2;
+}
+
+.title-profile span {
+    color: #00D1B2;
+}
+
+.subtitle-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subtitle-handleCars {
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* START HANDLE CARS */
+
+
+.handleCars-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.handleCars-container-row {
+    flex-direction: row;
+}
+
+.handleCars-container-column {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.img-handleCars {
+    min-width: 300px;
+}
+
+.btnContainer-handleCars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* END HANDLE CARS */
+
+
+/* START TABLE */
+
+.cars-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cars-container thead {
+    background: white;
+}
+
+thead {
+    border-bottom: 2px solid #222;
+}
+
+table {
+    border-collapse: collapse;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 10px;
+}
+
+table th,
+table td {
+    text-align: start;
+    padding: 10px 15px;
+}
+
+
+
+table td:last-child {
+    text-align: center;
+}
+
+.handle-btn {
+    color: white;
+    font-weight: bold;
+}
+
+/* END TABLE*/
+
+.nav-isMobile {
+    align-items: center !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* GENERAL */
+.AdminPage-desktop-width {
+    position: relative;
+    left: 175px;
+    width: calc(100% - 175px) !important;
+    margin: 0 !important;
+}
+
+.AdminPage-ismobile-padding {
+    padding: 10px !important;
+    height: calc(100vh - 3.25rem);
+}
+
+.AdminPage {
+    background: #F7F7F7;
+    height: 100vh;
+    padding: 0;
+}
+
+.adminPage-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F7F7F7;
+    overflow: auto;
+}

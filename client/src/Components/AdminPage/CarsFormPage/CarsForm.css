@@ -1,0 +1,35 @@
+.Carsform-container {
+    padding: 0 15px 10px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #F7F7F7;
+    overflow: auto;
+}
+
+.Carsform-title {
+    padding: 20px 0;
+    font-weight: 600;
+    color: #485FC7;
+    border-bottom: 1px solid grey;
+    font-size: 2rem;
+}
+
+.CarsForm-btnTop-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.CarsForm-FormContainer {
+    margin-top: 20px;
+}
+
+.CarsForm-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.CarsForm-submit-container .control:first-child {
+    margin-right: 10px;
+}

@@ -1,0 +1,43 @@
+.navbar, .navbar-menu {
+    color: white;
+}
+
+.navbar-container-desktop {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+
+.companyName {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.logo {
+    max-height: 2.5rem !important;
+}
+
+.navbar-menu {
+    align-items: center;
+}
+
+.modal-card-foot {
+    justify-content: center;
+}
+
+.navBar-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-active-background {
+    background-color: #1b1b1b;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

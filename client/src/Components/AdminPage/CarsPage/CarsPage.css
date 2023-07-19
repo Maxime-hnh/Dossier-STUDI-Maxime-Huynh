@@ -1,0 +1,39 @@
+.carsPage-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #F7F7F7;
+    overflow: auto;
+    left: 175px;
+    width: calc(100% - 175px);
+}
+
+
+.carsPage-date {
+    margin: auto;
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    right: 5px;
+    top: 5px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+
+.carsPage-brand {
+    margin: auto;
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    left: 5px;
+    top: 5px;
+    z-index: 1;
+    flex-wrap: wrap; 
+}
+
+
+.carsPage-img {
+    border-radius: 5px 5px 0 0;
+}

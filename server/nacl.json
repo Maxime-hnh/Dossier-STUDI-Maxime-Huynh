@@ -1,0 +1,51 @@
+[
+    {
+        "group": "admin",
+        "permissions": [
+            {
+                "resource": "*",
+                "methods": "*",
+                "action": "allow"
+            }
+        ]
+    },
+    {
+        "group": "user",
+        "permissions": [
+            {
+                "resource": "/cars/*",
+                "methods": "*",
+                "action": "allow"
+            },
+            {
+                "resource": "/testimonials/*",
+                "methods": "*",
+                "action": "allow"
+            },
+            {
+                "resource": "/file",
+                "methods": "*",
+                "action": "allow"
+            },
+            {
+                "resource": "/user/myprofil",
+                "methods": [
+                    "GET"
+                ],
+                "action": "allow"
+            },
+            {
+                "resource": "/contents, /openingHours",
+                "methods": "*",
+                "action": "deny"
+            },
+            {
+                "resource": "/user",
+                "methods": [
+                    "POST", "DELETE", "PUT, GET"
+                ],
+                "action": "deny"
+            }
+        ]
+    }
+]

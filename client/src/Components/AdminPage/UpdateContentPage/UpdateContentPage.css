@@ -1,0 +1,13 @@
+.title,
+.description,
+.phoneNumber,
+.email {
+    width: 100%;
+}
+
+.updateContent-Form {
+    padding: 1rem 1.5rem !important;
+    box-shadow: 0 0 4px rgb(0 0 0 / 10%);
+    background: white;
+    border-radius: 7px;
+}

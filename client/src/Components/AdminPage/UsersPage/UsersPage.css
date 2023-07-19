@@ -1,0 +1,19 @@
+.usersPage-container {
+    background: #F7F7F7;
+    height: 100vh;
+    padding: 0;
+}
+
+
+.usersPage-desktop {
+    position: relative;
+    left: 175px;
+    width: calc(100% - 175px) !important;
+    margin: 0 !important;
+}
+
+
+.usersPage-mobile {
+    padding: 10px !important;
+    height: calc(100vh - 3.25rem);
+}

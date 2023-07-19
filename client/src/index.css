@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../fonts/Rajdhani/Rajdhani-Bold.ttf') format('truetype'),
+    url('../fonts/Rajdhani/Rajdhani-SemiBold.ttf') format('truetype'),
+    url('../fonts/Rajdhani/Rajdhani-Medium.ttf') format('truetype'),
+    url('../fonts/Rajdhani/Rajdhani-Regular.ttf') format('truetype'),
+    url('../fonts/Rajdhani/Rajdhani-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Black.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-BlackItalic.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-Bold.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-Italic.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-LightItalic.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-Regular.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-Thin.ttf') format('truetype'),
+    url('../fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+;
