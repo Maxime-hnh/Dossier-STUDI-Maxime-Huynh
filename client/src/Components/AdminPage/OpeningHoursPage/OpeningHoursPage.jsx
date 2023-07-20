@@ -155,12 +155,15 @@ export default function OpeningHoursPage() {
                                                             type="checkbox"
                                                             name={`openingHours.${day}.closed`}
                                                             id={`openingHours.${day}.closed`}
-                                                            onChange={() => {
+                                                            onChange={(e) => {
+                                                                const { checked } = e.target;
                                                                 setOpeningHours((prevOpeningHours) => ({
                                                                     ...prevOpeningHours,
                                                                     [day]: {
                                                                         ...prevOpeningHours[day],
-                                                                        closed: !prevOpeningHours[day].closed,
+                                                                        closed: checked,
+                                                                        openingTime: checked ? "00:00:00" : prevOpeningHours[day].openingTime,
+                                                                        closingTime: checked ? "00:00:00" : prevOpeningHours[day].closingTime,
                                                                     },
                                                                 }));
                                                             }}
