@@ -7,9 +7,9 @@
 
 # Made with : 
 1. Front :
-   - React js, react-router-dom, Formik, Yup, Bulma, Moment, React-icons
+   - React, React-router-dom, Formik, Yup, Bulma, Moment, React-icons
 3. Back :
-   - Node js, Sequelize, Express, Jsonwebtoken, bcrypt, joi, express-acl, cors, dotenv, fs, multer, 
+   - Node, Sequelize, Express, Jsonwebtoken, bcrypt, joi, express-acl, cors, dotenv, fs, multer, 
 3. Server :
    - Fly.io, Docker
 
