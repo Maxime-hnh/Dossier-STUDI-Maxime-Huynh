@@ -87,12 +87,12 @@ export default function Profile() {
             {user ?
                 <div breakpoint='fluid' className={` AdminPage ${width > 1023 ? 'AdminPage-desktop-width' : 'AdminPage-ismobile-padding '}`}>
                     <div className=' dashboard'>
-                        <h1 className='AdminPage-title mb-2'>Bonjour <span>{user.firstName}</span>, bienvenue sur votre <span>dashboard</span></h1>
+                        <h1 className='AdminPage-title mb-2 has-text-centered'>Bonjour <span>{user.firstName}</span>, bienvenue sur votre <span>dashboard</span></h1>
                         <div className='pl-3 pr-3'>
                             <div className='handleCars'>
                                 <div className="subtitle-container">
                                     <AiOutlineFileAdd size={34} />
-                                    <h2 className='subtitle-handleCars'>Gérer mes véhicules</h2>
+                                    <h2 className='subtitle-handleCars has-text-centered'>Gérer mes véhicules</h2>
                                 </div>
                                 <div className={width > 1023 ? 'handleCars-container handleCars-container-row' : 'handleCars-container handleCars-container-column'}>
 

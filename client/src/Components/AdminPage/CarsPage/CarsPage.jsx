@@ -66,7 +66,7 @@ export default function CarsPage() {
             <NavBarAdmin />
             <div className={width > 1023 ? 'carsPage-container' : ''}>
                 <div className="column is-variable p-0">
-                    <h1 className='AdminPage-title mb-2'>Il y a actuellement <span>{totalCars}</span> véhicules listés</h1>
+                    <h1 className='AdminPage-title mb-2 has-text-centered'>Il y a actuellement <span>{totalCars}</span> véhicules listés</h1>
                     <div className="column is-12">
 
                         <div className="columns is-multiline is-1 is-justify-content-center">

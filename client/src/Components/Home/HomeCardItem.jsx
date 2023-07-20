@@ -16,9 +16,9 @@ export default function HomeCardItem({name, price}) {
             >
                 <div style={{padding:'2rem 0'}}>
                         <div className="content p-2">
-                            <p className="title is-3 homeCardItem-title">VENTES FLASH !<TiFlashOutline size={30} color='#eee938'/></p>
-                            <p className="title is-2 has-text-dark is-uppercase">{name}</p>
-                            <p className="title pb-0 mb-0 has-text-dark" style={{fontFamily:'Lato', fontSize:'3.5rem'}}>{price} €</p>
+                            <p className="title is-3 homeCardItem-title has-text-centered">VENTES FLASH !<TiFlashOutline size={30} color='#eee938'/></p>
+                            <p className="title is-2 has-text-dark is-uppercase has-text-centered">{name}</p>
+                            <p className="title pb-0 mb-0 has-text-dark has-text-centered" style={{fontFamily:'Lato', fontSize:'3.5rem'}}>{price} €</p>
 
                         </div>
                 </div>

@@ -28,7 +28,7 @@ export default function UpdateContentPage() {
             <div breakpoint='fluid' className={` AdminPage ${width > 1023 ? 'AdminPage-desktop-width' : 'AdminPage-ismobile-padding '}`}>
                 <div className='adminPage-container'>
 
-                    <h1 className='AdminPage-title mb-2'>Contenu de la page d'<span>accueil</span></h1>
+                    <h1 className='AdminPage-title mb-2 has-text-centered'>Contenu de la page d'<span>accueil</span></h1>
                     <nav
                         role="navigation"
                         arial-label="main navigation"

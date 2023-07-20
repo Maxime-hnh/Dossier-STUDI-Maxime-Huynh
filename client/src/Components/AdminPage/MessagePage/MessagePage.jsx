@@ -65,7 +65,7 @@ export default function ContactPage() {
 
                 <div className='adminPage-container'>
 
-                    <h1 className='AdminPage-title mb-2'>Nos <span>Messages</span> reçus</h1>
+                    <h1 className='AdminPage-title mb-2 has-text-centered'>Nos <span>Messages</span> reçus</h1>
                     <div className="column is-12">
 
                         <div className="columns is-multiline is-1 is-justify-content-center">

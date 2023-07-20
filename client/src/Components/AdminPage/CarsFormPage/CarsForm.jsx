@@ -42,7 +42,7 @@ export default function CarsForm() {
             <div breakpoint='fluid' className={` AdminPage ${width > 1023 ? 'AdminPage-desktop-width' : 'AdminPage-ismobile-padding '}`}>
                 <div className='Carsform-container'>
 
-                    <h1 className='Carsform-title'>Ajouter une annonce</h1>
+                    <h1 className='Carsform-title has-text-centered'>Ajouter une annonce</h1>
                     <div className='CarsForm-btnTop-container'>
                         {updateForm ? ''
                             :

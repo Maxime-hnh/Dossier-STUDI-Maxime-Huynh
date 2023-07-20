@@ -94,7 +94,7 @@ export default function TestimonialPage() {
 
                 <div className='adminPage-container'>
 
-                    <h1 className='AdminPage-title mb-2'>Nos <span>témoignages</span></h1>
+                    <h1 className='AdminPage-title mb-2 has-text-centered'>Nos <span>témoignages</span></h1>
                     <nav
                         role="navigation"
                         arial-label="main navigation"
