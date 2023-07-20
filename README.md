@@ -1,4 +1,15 @@
-# Dossier-STUDI-Maxime-Huynh
+# :car: GARAGE WEBSITE
+
+# Made with : 
+* Front :
+  - React js, react-router-dom, Formik, Yup, Bulma, Moment, React-icons
+
+* Back :
+  - Node js, Sequelize, Express, Jsonwebtoken, bcrypt, joi, express-acl, cors, dotenv, fs, multer, 
+ 
+* Server :
+  - Fly.io
+  - Docker
 
 # Getting Started
 
@@ -14,13 +25,13 @@
 1. Create a schema in pgAdmin with the name "garagevparrot_m" and set the owner to "postgres."
 
 
-# installing (local) :
+# :file_folder: installing (local) :
 1. Go to Localhost branch and clone it
 1. Run npm i in the root directory.
 2. Navigate to the "client" folder and run npm i --force.
 
 
-# Running the local server :
+# :house: Running the local server :
 
 1. Start the client, which listens on port 8001:
    - Navigate to the "client" folder.
@@ -31,7 +42,7 @@
    - Run npm run start.
 
  
-# Create admin account :
+# :cop: Create admin account :
 
 1. Modify the file "/server/models/user.js" and change the role's default value to 'admin' instead of 'user'.
 2. Create the admin account using one of the following methods:
