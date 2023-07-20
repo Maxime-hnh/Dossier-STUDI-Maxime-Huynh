@@ -50,7 +50,7 @@ const Login = () => {
                 })}
                 onSubmit={async (values) => {
                     try {
-                        const response = await fetch('http://51.210.124.204:8000/login', {
+                        const response = await fetch('/login', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

@@ -72,7 +72,7 @@ export default function Contact({car}) {
         })}
         onSubmit={async (values) => {
           try {
-            const response = await fetch('http://51.210.124.204:8000/contacts', {
+            const response = await fetch('/contacts', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ export default function UpdateContentOne({ updateForm, updateFormClick }) {
     useEffect(() => {
         const getContent = async () => {
             try {
-                const response = await fetch('http://51.210.124.204:8000/contents/3', {
+                const response = await fetch('/contents/3', {
                     method: 'GET'
                 });
                 if (response.ok) {
@@ -59,7 +59,7 @@ export default function UpdateContentOne({ updateForm, updateFormClick }) {
                         .required()
                 })}
                 onSubmit={values => {
-                    fetch('http://51.210.124.204:8000/contents/3', {
+                    fetch('/contents/3', {
                         method: 'PUT',
                         headers: {
                             'Content-type': 'application/json',

@@ -31,7 +31,7 @@ export default function TestimonialPage() {
             isChecked: true
         }
         try {
-            const response = await fetch(`http://51.210.124.204:8000/testimonials/changeStatus/${testimonialId}`, {
+            const response = await fetch(`/testimonials/changeStatus/${testimonialId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json',
@@ -57,7 +57,7 @@ export default function TestimonialPage() {
             isChecked: true
         }
         try {
-            const response = await fetch(`http://51.210.124.204:8000/testimonials/changeStatus/${testimonialId}`, {
+            const response = await fetch(`/testimonials/changeStatus/${testimonialId}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json',

@@ -24,7 +24,7 @@ export default function SellPage() {
     useEffect(() => {
         const getAllCars = async () => {
             try {
-                const response = await fetch('http://51.210.124.204:8000/cars/all', {
+                const response = await fetch('/cars/all', {
                     method: 'GET'
                 })
                 if (response.ok) {

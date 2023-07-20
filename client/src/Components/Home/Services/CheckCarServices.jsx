@@ -10,7 +10,7 @@ export default function CheckCarServices({width}) {
     useEffect(() => {
         const getContent = async () => {
             try {
-                const response = await fetch('http://51.210.124.204:8000/contents/1', {
+                const response = await fetch('/contents/1', {
                     method: 'GET'
                 });
                 if (response.ok) {

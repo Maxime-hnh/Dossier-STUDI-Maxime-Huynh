@@ -10,7 +10,7 @@ export default function AllTestimonials({handleUnapprovedStatus, handleApprovedS
 
     const getTestimonials = async () => {
       try {
-        const response = await fetch('http://51.210.124.204:8000/testimonials/all', {
+        const response = await fetch('/testimonials/all', {
           method: 'GET',
           headers: {
             'Content-type': 'application/json',

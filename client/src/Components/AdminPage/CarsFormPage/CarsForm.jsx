@@ -127,7 +127,7 @@ export default function CarsForm() {
                             date: dateSchema
                         })}
                         onSubmit={values => {
-                            fetch(`http://51.210.124.204:8000/cars${car && car.id ? `/${car.id}` : ''}`, {
+                            fetch(`/cars${car && car.id ? `/${car.id}` : ''}`, {
                                 method: car && car.id ? 'PUT' : 'POST',
                                 headers: {
                                     'Content-type': 'application/json',
