@@ -15,7 +15,7 @@ export default function ContactPage() {
 
         const getMessages = async () => {
           try {
-            const response = await fetch('/contacts', {
+            const response = await fetch('http://localhost:8000/contacts', {
               method: 'GET',
               headers: {
                 'Content-type': 'application/json',

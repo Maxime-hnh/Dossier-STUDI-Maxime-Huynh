@@ -127,7 +127,7 @@ export default function CarsForm() {
                             date: dateSchema
                         })}
                         onSubmit={values => {
-                            fetch(`/cars${car && car.id ? `/${car.id}` : ''}`, {
+                            fetch(`http://localhost:8000/cars${car && car.id ? `/${car.id}` : ''}`, {
                                 method: car && car.id ? 'PUT' : 'POST',
                                 headers: {
                                     'Content-type': 'application/json',
@@ -138,6 +138,7 @@ export default function CarsForm() {
                                 .then(response => response.json())
                                 .then(data => {
                                     console.log(`${car && car.id ? 'Annonce mise à jour : ' : 'Annonce créée : '}`, data)
+                                    alert('Annonce créée avec succès !')
                                 })
                                 .catch(error => {
                                     console.error('Erreur lors de l\'enregistrement des données de l\'événement :', error);
@@ -179,3 +180,4 @@ export default function CarsForm() {
     );
 
 };
+

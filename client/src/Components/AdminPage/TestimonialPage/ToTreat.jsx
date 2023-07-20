@@ -11,7 +11,7 @@ export default function AllTestimonials({ handleApprovedStatus, handleUnapproved
 
         const getTestimonials = async () => {
             try {
-                const response = await fetch('/testimonials/toTreat', {
+                const response = await fetch('http://localhost:8000/testimonials/toTreat', {
                     method: 'GET',
                     headers: {
                         'Content-type': 'application/json',

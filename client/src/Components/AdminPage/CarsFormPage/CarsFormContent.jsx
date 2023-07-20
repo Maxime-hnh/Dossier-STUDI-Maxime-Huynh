@@ -15,7 +15,7 @@ export default function CarsFormContent({ updateForm, setFieldValue, token }) {
                 formData.append('file', file);
             });
 
-            fetch('/file', {
+            fetch('http://localhost:8000/file', {
                 method: 'POST',
                 headers: {
                     'x-access-token': token,

@@ -49,6 +49,10 @@ acl.config({
     defaultRole: 'anonymous'
   })
 
+  //TEST ROUTE
+  app.get('/', (req, res, next) => {
+    res.send('Hello World !!');
+});
  
 //CRUD ROUTES
 app.use("/login", auth);
@@ -60,11 +64,12 @@ app.use('/openingHours', openingHours)
 app.use('/testimonials', testimonials)
 app.use('/file', express.static(path.join(__dirname, 'files')), file);
 
-//TEST ROUTE
-app.use(express.static(path.join(__dirname,'build')))
-app.get('/*', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'build','index.html'))
-});
+
+// IF PRODUDCTION (for docker). REMOVE TEST ROUTE
+// app.use(express.static(path.join(__dirname,'build')))
+// app.get('/*', (req, res, next) => {
+//     res.sendFile(path.join(__dirname,'build','index.html'))
+// });
 
 
 //ERROR HANDLING

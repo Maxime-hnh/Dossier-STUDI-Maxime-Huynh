@@ -53,7 +53,7 @@ export default function AddUserModal({ onUserCreated, handleOpenAddUser }) {
                             .required('Veuillez renseigner votre mot de passe')
                     })}
                     onSubmit={values => {
-                        fetch('/user', {
+                        fetch('http://localhost:8000/user', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ export default function UsersPage() {
     useEffect(() => {
         const getUsers = async () => {
             try {
-                const response = await fetch('/user', {
+                const response = await fetch('http://localhost:8000/user', {
                     method: 'GET',
                     headers: {
                         'x-access-token': token,
@@ -44,7 +44,7 @@ export default function UsersPage() {
 
     const deleteUser = async (userId) => {
         try {
-            const response = await fetch(`/user/${userId}`, {
+            const response = await fetch(`http://localhost:8000/user/${userId}`, {
                 method: 'DELETE',
                 headers: {
                     'x-access-token': token

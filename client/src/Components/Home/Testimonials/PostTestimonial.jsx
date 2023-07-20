@@ -32,7 +32,7 @@ export default function PostTestimonial() {
                         rate: Yup.number().min(0).max(5)
                     })}
                     onSubmit={values => {
-                        fetch('/testimonials/', {
+                        fetch('http://localhost:8000/testimonials/', {
                             method: 'POST',
                             headers: {
                                 'Content-type': 'application/json',

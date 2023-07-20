@@ -35,7 +35,7 @@ export default function Profile() {
     useEffect(() => {
         const fetchUserInfo = async () => {
             try {
-                const response = await fetch('/user/myprofil', {
+                const response = await fetch('http://localhost:8000/user/myprofil', {
                     method: 'GET',
                     headers: {
                         'x-access-token': token,
@@ -60,7 +60,7 @@ export default function Profile() {
     useEffect(() => {
         const getMyCars = async () => {
             try {
-                const response = await fetch('/cars/all', {
+                const response = await fetch('http://localhost:8000/cars/all', {
                     method: 'GET',
                     headers: {
                         'x-access-token': token,
