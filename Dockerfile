@@ -9,7 +9,6 @@ RUN rm -rf server/build && mkdir -p server/build
 # prepare server app
 WORKDIR /app/server
 RUN npm install
-RUN rsync -rvlptzEog --exclude=/build
 
 
 # prepare client app
