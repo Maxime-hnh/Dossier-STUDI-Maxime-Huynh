@@ -12,7 +12,6 @@
   - Fly.io
   - Docker
 
-# Getting Started
 
 # Prerequisites :
 
