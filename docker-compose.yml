@@ -12,6 +12,6 @@ services:
       - PG_PASSWORD = Okolo2023
       - PG_HOST = pj624348-001.eu.clouddb.ovh.net
       - PG_PORT = 35286
-      - URL_SITE = https://garage-vparrot.fly.dev/file/
+      - URL_SITE = https://garage-vparrot.fly.dev/file
       - JWTPRIVATEKEY = secretkey
       - SALT = 10
