@@ -27,7 +27,7 @@ if (!fs.existsSync(uploadDirectory)) {
 
 // CORS POLICY
 app.use(cors({
-    origin: 'http://51.210.124.204:8001',
+    origin: 'http://51.210.124.204:8000',
     methods: ['GET', 'PUT', 'DELETE', 'POST'],
     allowedHeaders: ['Content-Type', 'x-access-token']
 }));
