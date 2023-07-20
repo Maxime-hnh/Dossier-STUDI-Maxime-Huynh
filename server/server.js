@@ -51,8 +51,9 @@ acl.config({
 
 
 //TEST ROUTE
+app.use(express.static(path.join(__dirname,'build','index.html')))
 app.get('/', (req, res, next) => {
-    res.send('Hello World !!');
+    res.sendFile(path.join(__dirname,'build','index.html'))
 });
 
 
