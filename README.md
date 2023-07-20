@@ -14,8 +14,8 @@
 1. Create a schema in pgAdmin with the name "garagevparrot_m" and set the owner to "postgres."
 
 
-# installing :
-
+# installing (local) :
+1. Go to Localhost branch and clone it
 1. Run npm i in the root directory.
 2. Navigate to the "client" folder and run npm i --force.
 
@@ -24,8 +24,7 @@
 
 1. Start the client, which listens on port 8001:
    - Navigate to the "client" folder.
-   - Run npm run start.
-   - Note: Unfortunately, in order to call the API on localhost, the API calls in the front-end code need to be changed from fetch('http://51.210.124.204:8000') to fetch('http://localhost:8000').    
+   - Run npm run start.   
 
 2. Start the server, which listens on port 8000:
    - Navigate to the "server" folder.
