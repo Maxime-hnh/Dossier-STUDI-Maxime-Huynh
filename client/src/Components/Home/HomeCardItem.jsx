@@ -22,7 +22,7 @@ export default function HomeCardItem({name, price}) {
 
                         </div>
                 </div>
-                <footer>
+                <footer className='is-flex is-justify-content-center'>
                     <button
                         className=" is-success button is-rounded m-5 is-uppercase has-text-weight-bold"
                     >
