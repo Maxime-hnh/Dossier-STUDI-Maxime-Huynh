@@ -4,11 +4,11 @@
 - https://garage-vparrot.fly.dev/
 
 # Made with : 
-* Front :
+1. Front :
   - React js, react-router-dom, Formik, Yup, Bulma, Moment, React-icons
-* Back :
+2. Back :
   - Node js, Sequelize, Express, Jsonwebtoken, bcrypt, joi, express-acl, cors, dotenv, fs, multer, 
-* Server :
+3. Server :
   - Fly.io
   - Docker
 
