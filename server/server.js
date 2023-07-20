@@ -49,14 +49,6 @@ acl.config({
     defaultRole: 'anonymous'
   })
 
-
-//TEST ROUTE
-app.use(express.static(path.join(__dirname,'build')))
-app.get('/', (req, res, next) => {
-    res.sendFile(path.join(__dirname,'build','index.html'))
-});
-
-
  
 //CRUD ROUTES
 app.use("/login", auth);
@@ -68,6 +60,11 @@ app.use('/openingHours', openingHours)
 app.use('/testimonials', testimonials)
 app.use('/file', express.static(path.join(__dirname, 'files')), file);
 
+//TEST ROUTE
+app.use(express.static(path.join(__dirname,'build')))
+app.get('/*', (req, res, next) => {
+    res.sendFile(path.join(__dirname,'build','index.html'))
+});
 
 
 //ERROR HANDLING
