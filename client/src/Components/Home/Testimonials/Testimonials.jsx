@@ -16,7 +16,7 @@ export default function Testimonials() {
 
         const getTestimonials = async () => {
             try {
-                const response = await fetch('http://51.210.124.204:8000/testimonials/approved', {
+                const response = await fetch('/testimonials/approved', {
                     method: 'GET',
                     headers: {
                         'Content-type': 'application/json',
